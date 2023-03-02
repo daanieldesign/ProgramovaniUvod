@@ -297,11 +297,8 @@ namespace ProgramovaniUvod
                 {
                     float podil = a / b;
                         Console.WriteLine(a + " " + " / " + " " + b + " = " + podil);
-                }
-                
-                
+                } 
             }
-
             Console.ReadKey(); //ukončí se program po -- klavesy
         }
     }

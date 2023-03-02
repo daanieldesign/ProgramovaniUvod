@@ -226,8 +226,24 @@ namespace ProgramovaniUvod
             Console.WriteLine("zadej druhé číslo: ");
             int b = Convert.ToInt16(Console.ReadLine());
 
-            Console.WriteLine("vysledek: " + (a+b));*/
+            Console.WriteLine("vysledek: " + (a+b));
 
+            Console.WriteLine("Holka nebo kluk?");
+            string pohlavi = Console.ReadLine();
+            if (pohlavi == "Je to asi fuk")
+            {
+                Console.WriteLine("Tako s takovým kašpárkem na mě nechoď"); 
+            }
+
+            else if (pohlavi == "Muž")
+                {
+                        Console.WriteLine("Vítej v klubu chlape!"); 
+                }
+            else
+            {
+                Console.WriteLine("Počítač vygeneroval tento druh jako neznámý.");
+            }
+            
             Console.WriteLine("Načti jméno: ");
             string name = Console.ReadLine(); //Načtení textu, není nutná konverze
             Console.WriteLine("Jméno = " + name);
@@ -243,6 +259,49 @@ namespace ProgramovaniUvod
             {
                 Console.WriteLine("Nejsem Václav ani Franta");
             }
+            */
+
+            Console.WriteLine("Načti první desetinné číslo: ");
+            float a = float.Parse(Console.ReadLine());
+            Console.WriteLine("Operace (Vybírej pouze ze znaků součet, rozdíl, součin, podíl:");
+            char znak = char.Parse(Console.ReadLine());
+            Console.WriteLine("Načti druhé desetinné číslo: ");
+            float b = float.Parse(Console.ReadLine());
+            
+            if (znak == '+')
+            {
+                float soucet = a + b;
+                Console.WriteLine(a + " " + " + " + " "  + b + " = " + soucet);
+            }
+
+            else if(znak == '-')
+            {
+                float rozdil = a - b;
+                Console.WriteLine(a + " " + " - " + " " + b + " = " + rozdil);
+            }
+
+            else if (znak == '*')
+            {
+                float soucin = a * b;
+                Console.WriteLine(a + " " + " * " + " " + b + " = " + soucin);
+            }
+
+            else if (znak == '/')
+            {
+                if (b == '0')
+                {
+                    Console.WriteLine("Nelze dělit nulou");
+                }
+
+                else
+                {
+                    float podil = a / b;
+                        Console.WriteLine(a + " " + " / " + " " + b + " = " + podil);
+                }
+                
+                
+            }
+
             Console.ReadKey(); //ukončí se program po -- klavesy
         }
     }

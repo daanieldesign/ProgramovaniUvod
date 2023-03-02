@@ -65,45 +65,45 @@ namespace ProgramovaniUvod
 
 
             //Kalkulačka
-           /* Console.WriteLine("zadej číslo");
-            float a = float.Parse(Console.ReadLine()); //pro desetinne cisla nepouzivame convert to int ale float parse
-            Console.WriteLine("zadej druhé číslo");
-            float b = float.Parse(Console.ReadLine());
-            Console.WriteLine("zadej volbu (1- sčítání, 2- odčítání, 3- násobení, 4- dělení)");
-            int volba = Convert.ToInt16(Console.ReadLine());
+            /* Console.WriteLine("zadej číslo");
+             float a = float.Parse(Console.ReadLine()); //pro desetinne cisla nepouzivame convert to int ale float parse
+             Console.WriteLine("zadej druhé číslo");
+             float b = float.Parse(Console.ReadLine());
+             Console.WriteLine("zadej volbu (1- sčítání, 2- odčítání, 3- násobení, 4- dělení)");
+             int volba = Convert.ToInt16(Console.ReadLine());
 
-            if (new int[] { 1, 2, 3, 4 }.Contains(volba)) //nový array s hodnotou pouze celého čísla, hodnoty 1, 2, 3, 4
-                { 
-                if (volba == 1)
-            {
-                Console.WriteLine("výsledek:" + (a + b));
-            }
-                if (volba == 2)
-            {
-                Console.WriteLine("výsledek:" + (a - b));
-            }
-                if (volba == 3)
-            {
-                Console.WriteLine("výsledek:" + (a * b));
-            }
-                if (volba == 4)
-            {
-                if (b != 0)
-                    {
-                        Console.WriteLine("výsledek:" + (a / b));
-                    }
-                    else
-                    {
-                        Console.WriteLine("nejde delit 0");
-                    }
-            }
-            }
-               else
-            {
-                Console.WriteLine("zvolte volbu 1-4");
-            }*/
+             if (new int[] { 1, 2, 3, 4 }.Contains(volba)) //nový array s hodnotou pouze celého čísla, hodnoty 1, 2, 3, 4
+                 { 
+                 if (volba == 1)
+             {
+                 Console.WriteLine("výsledek:" + (a + b));
+             }
+                 if (volba == 2)
+             {
+                 Console.WriteLine("výsledek:" + (a - b));
+             }
+                 if (volba == 3)
+             {
+                 Console.WriteLine("výsledek:" + (a * b));
+             }
+                 if (volba == 4)
+             {
+                 if (b != 0)
+                     {
+                         Console.WriteLine("výsledek:" + (a / b));
+                     }
+                     else
+                     {
+                         Console.WriteLine("nejde delit 0");
+                     }
+             }
+             }
+                else
+             {
+                 Console.WriteLine("zvolte volbu 1-4");
+             }*/
 
-
+            /*
             Console.WriteLine("zadej číslo");
             float a = float.Parse(Console.ReadLine()); //pro desetinne cisla nepouzivame convert to int ale float parse
             Console.WriteLine("zadej znak (+ - sčítání, - - odčítání, * - násobení, / - dělení)");
@@ -143,6 +143,7 @@ namespace ProgramovaniUvod
             {
                 Console.WriteLine("zvolte znak +, -, *, /");
             }
+            /*
 
             /*Console.WriteLine("nacti cislo");
             int a = Convert.ToInt16(Console.ReadLine());
@@ -227,9 +228,21 @@ namespace ProgramovaniUvod
 
             Console.WriteLine("vysledek: " + (a+b));*/
 
-
-
-
+            Console.WriteLine("Načti jméno: ");
+            string name = Console.ReadLine(); //Načtení textu, není nutná konverze
+            Console.WriteLine("Jméno = " + name);
+            if (name == "Václav")
+            {
+                Console.WriteLine("Jsem Václav");
+            }
+            else if(name == "Franta")
+            {
+                Console.WriteLine("Jsem Franta");
+            }
+            else
+            {
+                Console.WriteLine("Nejsem Václav ani Franta");
+            }
             Console.ReadKey(); //ukončí se program po -- klavesy
         }
     }

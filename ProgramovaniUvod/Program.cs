@@ -65,43 +65,43 @@ namespace ProgramovaniUvod
 
 
             //Kalkulačka
-           /* Console.WriteLine("zadej číslo");
-            float a = float.Parse(Console.ReadLine()); //pro desetinne cisla nepouzivame convert to int ale float parse
-            Console.WriteLine("zadej druhé číslo");
-            float b = float.Parse(Console.ReadLine());
-            Console.WriteLine("zadej volbu (1- sčítání, 2- odčítání, 3- násobení, 4- dělení)");
-            int volba = Convert.ToInt16(Console.ReadLine());
+            /* Console.WriteLine("zadej číslo");
+             float a = float.Parse(Console.ReadLine()); //pro desetinne cisla nepouzivame convert to int ale float parse
+             Console.WriteLine("zadej druhé číslo");
+             float b = float.Parse(Console.ReadLine());
+             Console.WriteLine("zadej volbu (1- sčítání, 2- odčítání, 3- násobení, 4- dělení)");
+             int volba = Convert.ToInt16(Console.ReadLine());
 
-            if (new int[] { 1, 2, 3, 4 }.Contains(volba)) //nový array s hodnotou pouze celého čísla, hodnoty 1, 2, 3, 4
-                { 
-                if (volba == 1)
-            {
-                Console.WriteLine("výsledek:" + (a + b));
-            }
-                if (volba == 2)
-            {
-                Console.WriteLine("výsledek:" + (a - b));
-            }
-                if (volba == 3)
-            {
-                Console.WriteLine("výsledek:" + (a * b));
-            }
-                if (volba == 4)
-            {
-                if (b != 0)
-                    {
-                        Console.WriteLine("výsledek:" + (a / b));
-                    }
-                    else
-                    {
-                        Console.WriteLine("nejde delit 0");
-                    }
-            }
-            }
-               else
-            {
-                Console.WriteLine("zvolte volbu 1-4");
-            }*/
+             if (new int[] { 1, 2, 3, 4 }.Contains(volba)) //nový array s hodnotou pouze celého čísla, hodnoty 1, 2, 3, 4
+                 { 
+                 if (volba == 1)
+             {
+                 Console.WriteLine("výsledek:" + (a + b));
+             }
+                 if (volba == 2)
+             {
+                 Console.WriteLine("výsledek:" + (a - b));
+             }
+                 if (volba == 3)
+             {
+                 Console.WriteLine("výsledek:" + (a * b));
+             }
+                 if (volba == 4)
+             {
+                 if (b != 0)
+                     {
+                         Console.WriteLine("výsledek:" + (a / b));
+                     }
+                     else
+                     {
+                         Console.WriteLine("nejde delit 0");
+                     }
+             }
+             }
+                else
+             {
+                 Console.WriteLine("zvolte volbu 1-4");
+             }*/
 
 
             Console.WriteLine("zadej číslo");
@@ -111,7 +111,7 @@ namespace ProgramovaniUvod
             Console.WriteLine("zadej druhé číslo");
             float b = float.Parse(Console.ReadLine());
             Console.WriteLine("zadej  ()");
-           
+
 
             if (new char[] { +, -, *, / }.Contains(znak)) //nový array s hodnotou pouze celého čísla, hodnoty +, -, *, /
             {
@@ -227,9 +227,76 @@ namespace ProgramovaniUvod
 
             Console.WriteLine("vysledek: " + (a+b));*/
 
+            Console.WriteLine("Holka nebo kluk?");
+            string pohlavi = Console.ReadLine();
+            if (pohlavi == "Je to asi fuk")
+            {
+                Console.WriteLine("Tako s takovým kašpárkem na mě nechoď");
+            }
+            else if (pohlavi == "Muž")
+            {
+                Console.WriteLine("Vítej v klubu chlape!");
+            }
+            else
+            {
+                Console.WriteLine("Počítač vygeneroval tento druh jako neznámý.");
+            }
 
+            Console.WriteLine("Načti jméno: ");
+            string name = Console.ReadLine(); //Načtení textu, není nutná konverze
+            Console.WriteLine("Jméno = " + name);
+            if (name == "Václav")
+            {
+                Console.WriteLine("Jsem Václav");
+            }
+            else if (name == "Franta")
+            {
+                Console.WriteLine("Jsem Franta");
+            }
+            else
+            {
+                Console.WriteLine("Nejsem Václav ani Franta");
+            }
+            */
 
+            Console.WriteLine("Načti první desetinné číslo: ");
+            float a = float.Parse(Console.ReadLine());
+            Console.WriteLine("Operace (Vybírej pouze ze znaků součet, rozdíl, součin, podíl:");
+            char znak = char.Parse(Console.ReadLine());
+            Console.WriteLine("Načti druhé desetinné číslo: ");
+            float b = float.Parse(Console.ReadLine());
 
+            if (znak == '+')
+            {
+                float soucet = a + b;
+                Console.WriteLine(a + " " + " + " + " " + b + " = " + soucet);
+            }
+
+            else if (znak == '-')
+            {
+                float rozdil = a - b;
+                Console.WriteLine(a + " " + " - " + " " + b + " = " + rozdil);
+            }
+
+            else if (znak == '*')
+            {
+                float soucin = a * b;
+                Console.WriteLine(a + " " + " * " + " " + b + " = " + soucin);
+            }
+
+            else if (znak == '/')
+            {
+                if (b == '0')
+                {
+                    Console.WriteLine("Nelze dělit nulou");
+                }
+
+                else
+                {
+                    float podil = a / b;
+                    Console.WriteLine(a + " " + " / " + " " + b + " = " + podil);
+                }
+            }
             Console.ReadKey(); //ukončí se program po -- klavesy
         }
     }

@@ -103,7 +103,7 @@ namespace ProgramovaniUvod
                 Console.WriteLine("zvolte volbu 1-4");
             }*/
 
-
+            /*
             Console.WriteLine("zadej číslo");
             float a = float.Parse(Console.ReadLine()); //pro desetinne cisla nepouzivame convert to int ale float parse
             Console.WriteLine("zadej znak (+ - sčítání, - - odčítání, * - násobení, / - dělení)");
@@ -142,7 +142,7 @@ namespace ProgramovaniUvod
             else
             {
                 Console.WriteLine("zvolte znak +, -, *, /");
-            }
+            }/*
 
             /*Console.WriteLine("nacti cislo");
             int a = Convert.ToInt16(Console.ReadLine());
@@ -257,7 +257,7 @@ namespace ProgramovaniUvod
             {
                 Console.WriteLine("Nejsem Václav ani Franta");
             }
-            x
+
             Console.WriteLine("Načti první desetinné číslo: ");
             float a = float.Parse(Console.ReadLine());
             Console.WriteLine("Operace (Vybírej pouze ze znaků součet, rozdíl, součin, podíl:");

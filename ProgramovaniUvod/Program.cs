@@ -259,7 +259,6 @@ namespace ProgramovaniUvod
             {
                 Console.WriteLine("Nejsem Václav ani Franta");
             }
-            */
 
             Console.WriteLine("Načti první desetinné číslo: ");
             float a = float.Parse(Console.ReadLine());
@@ -299,6 +298,9 @@ namespace ProgramovaniUvod
                         Console.WriteLine(a + " " + " / " + " " + b + " = " + podil);
                 } 
             }
+
+            */
+
             Console.ReadKey(); //ukončí se program po -- klavesy
         }
     }

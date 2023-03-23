@@ -298,9 +298,74 @@ namespace ProgramovaniUvod
                         Console.WriteLine(a + " " + " / " + " " + b + " = " + podil);
                 } 
             }
+            
+            Console.WriteLine(a);
+            Console.WriteLine("Načtěte 1.  číslo: ");
+            float a = float.Parse(Console.ReadLine());
+            char y = Char.Parse(Console.ReadLine());
+            Console.WriteLine("Načtěte 2.  číslo: ");
+            float b = float.Parse(Console.ReadLine());
+            Console.WriteLine("Načtěte znak: ");
+
+            Console.WriteLine("Zadej 10 čísel: ");
+            int sude = 0;
+            int liche = 0;
+            for (int i = 0; i < 10; i++)
+            {
+                int a = Convert.ToInt16(Console.ReadLine());
+                if (a % 2 == 0)
+                {
+                    sude += 1;
+                }
+                else
+                {
+                    liche += 1;
+                }
+            }
+            Console.WriteLine("Sudé: " + sude + ", " + "Liché: " + liche);
+            
+            // Program, který vybere z 10 čísel, které je kladné, záporné a nula
+            Console.WriteLine("Zadej 10 čísel: ");
+            int kladne = 0;
+            int zaporne = 0;
+            int nula = 0;
+            for (int i = 0; i < 10; i++)
+            {
+                int a = Convert.ToInt16(Console.ReadLine());
+                if (a < 0)
+                {
+                    zaporne += 1;
+                }
+                else if (a == 0)
+                {
+                    nula += 1;
+                }
+                else
+                {
+                    kladne += 1;
+                }
+            }
+            Console.WriteLine("Kladné: " + kladne + ", " + "Záporné: " + zaporne + ", " + "Nula:" + nula);
 
             */
 
+            // Program, který vybere z 10 čísel největší číslo a vypíše ho
+            Console.WriteLine("Zadejte 10 čísel, program vybere po zadaní všech čísel největší číslo: ");
+            int max = 0;
+            for (int i = 0; i < 10; i++)
+            {
+                int a = Convert.ToInt32(Console.ReadLine());
+                if (a > max)
+                {
+                    max = a;
+                }
+                else
+                {
+                    max = max;
+                }
+            }
+            Console.WriteLine("Nejvyšší číslo: " + max);
+            
             Console.ReadKey(); //ukončí se program po -- klavesy
         }
     }

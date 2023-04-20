@@ -347,7 +347,7 @@ namespace ProgramovaniUvod
             }
             Console.WriteLine("Kladné: " + kladne + ", " + "Záporné: " + zaporne + ", " + "Nula:" + nula);
 
-            */
+            
 
             // Program, který vybere z 10 čísel největší číslo a vypíše ho
             Console.WriteLine("Zadejte 10 čísel, program vybere po zadaní všech čísel největší číslo: ");
@@ -366,6 +366,81 @@ namespace ProgramovaniUvod
             }
             Console.WriteLine("Nejvyšší číslo: " + max);
             
+
+            Console.WriteLine("Zadejte volbu: ");
+            char znak = char.Parse(Console.ReadLine());
+            
+            //vícenásobné větvení
+            switch (znak) //vstupní parametr pro data (číslo, znak)
+            {
+                case 'a': //vyhodnocení výrazu
+                    //příkaz
+                    Console.WriteLine("Vaše volba byla A");
+                    break; //ukončení bloku, které je povinné
+                case 'b':
+                    Console.WriteLine("Vaše volba byla B");
+                    break;
+
+                default: //pokud nejsou vyhodnoceny předchozí kroky, tak je provedem default
+                    break;
+            }
+            
+
+            Console.WriteLine("Zadejte číslo:");
+            int volba = Convert.ToInt16(Console.ReadLine());
+
+            switch (volba)
+            {
+                case 1:
+                    Console.WriteLine("Pondělí");
+                    break;
+                case 2:
+                    Console.WriteLine("Úterý");
+                    break;
+                case 3:
+                    Console.WriteLine("Středa");
+                    break;
+                case 4:
+                    Console.WriteLine("Čtvrtek");
+                    break;
+                case 5:
+                    Console.WriteLine("Pátek");
+                    break;
+                default:
+                    Console.WriteLine("Není pracovní den");
+                        break;
+            }
+            */
+
+            Console.WriteLine("Zadejte první číslo:");
+            float x = float.Parse(Console.ReadLine());
+            Console.WriteLine("Zadejte druhé číslo:");
+            float y = float.Parse(Console.ReadLine());
+
+
+            Console.WriteLine("Zadejte znak (Na výběr jsou: 1 – sčítání, 2 – odčítání, 3 – násobení, 4 – dělení");
+            int volba = Convert.ToInt16(Console.ReadLine());
+
+            switch (volba)
+            {
+                case 1:
+                    float scitani = x + y;
+                    Console.WriteLine("Sčítání: " + x + "+" + y + "=" + scitani);
+                    break;
+                case 2:
+                    float odcitani = x - y;
+                    Console.WriteLine("Odčítání: " + x + "-" + y + "=" + odcitani);
+                    break;
+                case 3:
+                    float nasobeni = x * y;
+                    Console.WriteLine("Násobení:" + x + "*" + y + "=" + nasobeni);
+                    break;
+                case 4:
+                    float deleni = x / y;
+                    Console.WriteLine("Dělení: " + x + "/" + y + "=" + deleni);
+                    break;
+            }
+
             Console.ReadKey(); //ukončí se program po -- klavesy
         }
     }

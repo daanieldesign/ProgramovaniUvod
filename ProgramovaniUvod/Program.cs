@@ -418,7 +418,7 @@ namespace ProgramovaniUvod
             float y = float.Parse(Console.ReadLine());
 
 
-            Console.WriteLine("Zadejte znak (Na výběr jsou: 1 – sčítání, 2 – odčítání, 3 – násobení, 4 – dělení");
+            Console.WriteLine("Zadejte znak (Na výběr jsou: 1 – sčítání, 2 – odčítání, 3 – násobení, 4 – dělení)");
             int volba = Convert.ToInt16(Console.ReadLine());
 
             switch (volba)
@@ -438,6 +438,10 @@ namespace ProgramovaniUvod
                 case 4:
                     float deleni = x / y;
                     Console.WriteLine("Dělení: " + x + "/" + y + "=" + deleni);
+                    break;
+
+               default:
+                    Console.WriteLine("Byla zadána jiná hodnota mimo výběr.");
                     break;
             }
 

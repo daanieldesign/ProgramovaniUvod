@@ -381,7 +381,7 @@ namespace ProgramovaniUvod
                     Console.WriteLine("Vaše volba byla B");
                     break;
 
-                default: //pokud nejsou vyhodnoceny předchozí kroky, tak je provedem default
+                default: //pokud nejsou vyhodnoceny předchozí kroky, tak je provede default
                     break;
             }
             
